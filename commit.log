@@ -1,0 +1,56 @@
+commit c7b005fba217012007a5c64c3ac2298dec23181d
+Author: Alan Ngo <alanngo673@gmail.com>
+Date:   Sun Jun 28 13:26:19 2020 -0500
+
+    Create git show branch
+
+commit 377e4c5af5efeb87b336b6ddcf08cba8ecf03511
+Author: Alan Ngo <alanngo673@gmail.com>
+Date:   Sun Jun 28 13:26:01 2020 -0500
+
+    Update README.md
+
+commit 2f873f5f6c36212cac8940b6c04310d34da454c1
+Author: Alan Ngo <alanngo673@gmail.com>
+Date:   Sun Jun 28 13:25:44 2020 -0500
+
+    Update README.md
+
+commit 9cd799b1cb6b6ae063d3d208be165012155055f2
+Author: Angela Cao <runningnerdtroll@gmail.com>
+Date:   Sun Jun 28 13:11:26 2020 -0500
+
+    Alan loves KPOP.
+
+commit 8c1f6994465666a407ef955a23457b44ccf8f16c
+Merge: 9cef8bc 3817f54
+Author: Angela Cao <runningnerdtroll@gmail.com>
+Date:   Sun Jun 28 13:04:43 2020 -0500
+
+    Merge pull request #1 from AngC1998/bryan
+    
+    testing python code
+
+commit 3817f54d9778359b576163d4b12c8e8fa8fdb33d
+Author: bryan <ee@email.com>
+Date:   Sun Jun 28 13:05:57 2020 -0700
+
+    testing python code
+
+commit 9cef8bc092e225d5127c8f68de892bfae15aa508
+Author: Angela Cao <runningnerdtroll@gmail.com>
+Date:   Sun Jun 28 12:50:02 2020 -0500
+
+    Update README.md
+
+commit 05a2a3a9a805aeaae857900ead6074a679a076af
+Author: Angela Cao <runningnerdtroll@gmail.com>
+Date:   Sun Jun 28 12:49:21 2020 -0500
+
+    Update README.md
+
+commit 9fa3e809e1f108bdbb4ba84c323c96cfb486e887
+Author: Angela Cao <runningnerdtroll@gmail.com>
+Date:   Sun Jun 28 12:38:35 2020 -0500
+
+    Initial commit
