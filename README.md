@@ -14,6 +14,9 @@ Idea:
 - Replica of Monopoly game online
 - Encoding scheme (like huffman), (Hard mode project idea)
 - Notepad-like application
+- Reddit bot
+- Music Player
+- YouTube video downloader
 
 ###Additional Project Ideas
 https://www.upgrad.com/blog/python-projects-ideas-topics-beginners/#Web
