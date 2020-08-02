@@ -4,13 +4,15 @@
 
 # import praw to use Reddit API
 import praw
+from botKeys import client_id, client_secret, password, user_agent, username
 
-# Reddit object
-reddit = praw.Reddit(client_id='WmmS1FTYJemKkA',
-                     client_secret='MeorsyYJUlOZpaF_lOo5Ce59NbQ',
-                     username='testtw132',
-                     password='evillion',
-                     user_agent='practice')
+# Reddit class
+reddit = praw.Reddit(client_id=client_id,
+                     client_secret=client_secret,
+                     username=username,
+                     password=password,
+                     user_agent=user_agent)
+
 
 # subreddit for practice
 subreddit = reddit.subreddit('Python')
@@ -76,7 +78,7 @@ def better_comment_chain():
 def stream_reddit():
     # stream comments
     sub = reddit.subreddit('politics')
-    hot_pol = subreddit.hot(limit=1)
+    # hot_pol = subreddit.hot(limit=1)
     for comment in sub.stream.comments():
         try:
             print(20 * '-')
