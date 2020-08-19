@@ -41,6 +41,21 @@ for submission in subreddit_two.hot():
             print('Bot replying to: ', submission.title)
             posts_replied_to.append(submission.id)
 
+page = 'hello'
+
+while page != '-1':
+    page = input('Enter in subreddit: ')
+    keyword = input('Enter in keyword in title you want to find: ')
+    reply = input('Enter what response you want to generate: ')
+
+    subreddit_page = reddit.subreddit(page)
+    for submission in subreddit_page.hot():
+        if submission.id not in posts_replied_to:
+            if keyword in submission.title:
+                submission.reply(reply)
+                print('Bot replying to: ', submission.title)
+                posts_replied_to.append(submission.id)
+
 with open('posts_replied_to.txt', 'w') as f:
     for post_id in posts_replied_to:
         f.write(post_id + '\n')
