@@ -19,6 +19,8 @@ else:
         posts_replied_to = posts_replied_to.split('\n')
         posts_replied_to = list(filter(None, posts_replied_to))
 
+#Have the bot say different things
+#Add flexibility for subreddits
 subreddit = reddit.subreddit('UTAustin')
 for submission in subreddit.hot(limit=5):
     if submission.id not in posts_replied_to:
