@@ -5,13 +5,13 @@ import os
 from botKeys import *
 import random
 
-#Create the Reddit instance
+# Create the Reddit instance
 reddit = praw.Reddit(client_id=client_id,
                      client_secret=client_secret,
                      username=username,
                      password=password,
                      user_agent=user_agent)
-
+# todo: what does this part do? Look into it
 if not os.path.isfile('posts_replied_to.txt'):
     posts_replied_to = []
 else:
@@ -20,8 +20,9 @@ else:
         posts_replied_to = posts_replied_to.split('\n')
         posts_replied_to = list(filter(None, posts_replied_to))
 
-#Have the bot say different things
-#Add flexibility for subreddits
+
+# Have the bot say different things
+# Add flexibility for subreddits
 
 def reply_bot(page, keywords, responses):
     subreddit_page = reddit.subreddit(page)
@@ -29,16 +30,19 @@ def reply_bot(page, keywords, responses):
         if submission.id not in posts_replied_to:
             for keyword in keywords:
                 if keyword in submission.title:
-                    index = random.randint(0, len(responses)-1)
+                    index = random.randint(0, len(responses) - 1)
                     reply = responses[index]
                     submission.reply(reply)
                     print('Bot replying to: ', submission.title)
                     posts_replied_to.append(submission.id)
 
+
 page = 'hello'
 keywords = []
 responses = []
 
+
+# Take in user input to make the Reddit bot reply to a comment
 while page != '-1':
     page = input('Enter in subreddit: ')
     keyword = 'hello'
@@ -57,6 +61,8 @@ while page != '-1':
         reply_bot(page, keywords, responses)
 
 
+# After creating a bot to reply to a comment, write to a file
+# to keep track of comments this bot (code) has replied to.
 with open('posts_replied_to.txt', 'w') as f:
     for post_id in posts_replied_to:
         f.write(post_id + '\n')
