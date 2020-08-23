@@ -5,65 +5,40 @@ Developers:
 - Bryan
 - Josh
 
-Project Manager: Angela
+####How to Run
+This Reddit Bot requires the PRAW (a Reddit API and toolkit) package. To obtain
+the package, follow the instructions on the PRAW website to install it: 
+https://praw.readthedocs.io/en/latest/
 
-Idea:
-- Quiz App: quizzes the user over concepts and practice problems done in specific UT classes (CS312, CS314, CS429, CS439, M325K, M328K, M361K/M365C, etc.) and depending on answers answered (correctly), rewards the user (like a song recommendation, etc.). 
-- Data Analyzing Tool that takes CSV files and performs basic functions such as curve fitting that outputs the funciton in fourier series and find relationships between two separate series of data and outputs a set of graphs and csv files based off the user input
-- Tuner and Metronome for a computer/laptop
-- Replica of Monopoly game online
-- Encoding scheme (like huffman), (Hard mode project idea)
-- Notepad-like application
-- Reddit bot
-- Music Player
-- YouTube video downloader
+You'll likely want to install PRAW via the terminal by the Python IDE of your 
+choice (ie Pycharm).
 
-###Additional Project Ideas
-https://www.upgrad.com/blog/python-projects-ideas-topics-beginners/#Web
-1. Mad Libs Generator
-2. Number Guessing
-3. Text-based Adventure Game
-4. Dice Rolling Simulator
-5. Hangman
-6. Contact Book
-7. Email Slicer
-8. Binary search algorithm
-9. Desktop Notifier App
-10. Python Story Generator
-11. YouTube video downloader
-12. Python Website Blocker
-13. Spin a Yarn
-14. What’s the word?
-15. Rock, Paper, Scissors
-16. Leap it!
-17. Find out, Fibonacci!
-18. Calculator
-19. Countdown Clock and Timer
-20. Random Password Generator
-21. Random Wikipedia Article
-22. Reddit Bot
-23. Python Command-Line Application
-24. Alarm Clock
-25. Tic-Tac-Toe
-26. Steganography
-27. Currency converter
-28. Post-it Notes
-29. Site Connectivity Checker
-30. Directory Tree Generator
-31. Speed Typing Test
-32. Content Aggregator
-33. Bulk File Rename/ Image Resize Application
-34. Python File Explorer
-35. Plagiarism Checker
-36. Web Crawler
-37. Music Player
-38. Price Comparison Extension
-39. Expense Tracker
-40. Regex Query Tool
-41. Instagram Photo Downloader
-42. Quiz Application
+After getting the PRAW to work and some configurations pull the code from Github
+into your Python IDE via the terminal. Make sure you have a separate directory 
+for this bot. 
 
-####Methods to Run
-Desktop GUI
-Command-Line
-Conclusion
+When you see the "botKeys.py" code of the file, fill in the
+credentials with your username, password, and developer keys (client id from
+creating your application, etc.) In case you don't recall on how to create a
+Reddit bot/script app ID: I (Bryan) recommend this Youtube video in getting the
+credentials dealt with. The recommended range is from 0:40 to 1:42.
+https://www.youtube.com/watch?v=NRgfgtzIhBQ&t=235s
+
+Once the code is in the proper directory fill in the credentials of your Reddit
+account and your app ID in botKeys.py, and you can run the app.
+
+####How the Bot Works
+This is a Reply Bot. This bot can reply to submissions on a given subreddit
+and do so on many submissions. This bot can streamline multiple comment activity
+such as promotions, warnings, and meme responses.
+
+Note: While this bot has the potential to be use for somewhat annoying purposes 
+(such as spam), this bot can be used to streamline comments that can be made on
+multiple submissions on any subreddit.
+
+To run the bot, open your Python IDE of choice and run it, preferably via the
+terminal. Then the program will ask for the subreddit, phrase to use, and
+keywords the bot can look out for. Then the bot can start commenting on the
+submissions on a chosen subreddit and let the comments repeat!
+
+If you have any questions or comments feel free to respond to any of us contributors.
