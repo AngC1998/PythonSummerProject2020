@@ -5,7 +5,7 @@ Developers:
 - Bryan
 - Josh
 
-####How to Run
+#### How to Run
 This Reddit Bot requires the PRAW (a Reddit API and toolkit) package. To obtain
 the package, follow the instructions on the PRAW website to install it: 
 https://praw.readthedocs.io/en/latest/
@@ -27,7 +27,7 @@ https://www.youtube.com/watch?v=NRgfgtzIhBQ&t=235s
 Once the code is in the proper directory fill in the credentials of your Reddit
 account and your app ID in botKeys.py, and you can run the app.
 
-####How the Bot Works
+#### How the Bot Works
 This is a Reply Bot. This bot can reply to submissions on a given subreddit
 and do so on many submissions. This bot can streamline multiple comment activity
 such as promotions, warnings, and meme responses.
